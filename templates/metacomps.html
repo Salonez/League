@@ -7,7 +7,7 @@
         <meta name="viewport" content="with=device-width, initial-scale=1.0">
         <!-- Title for tab-->
         <title>TFT Bot</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -18,8 +18,8 @@
                 <!-- Navigation links at top of website-->
                 <div class="nav-links">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="page2.html">Meta Comps</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/metacomps">Meta Comps</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">GitHub Repository</a></li>
                     </ul>
@@ -34,14 +34,14 @@
                     </span>
                     <!-- box of champs-->
                     <span class="champs">
-                        <img src="images/Poppy.png">
-                        <img src="images/Ziggs.png">
-                        <img src="images/Blitzcrank.png" class="greens">
-                        <img src="images/Lulu.png" class="greens">
-                        <img src="images/Tristana.png">
-                        <img src="images/Heimerdinger.png" class="">
-                        <img src="images/Vex.png" class="">
-                        <img src="images/Janna.png" class="">
+                        <img src="{{url_for('static', filename='images/Poppy.png')}}">
+                        <img src="{{url_for('static', filename='images/Ziggs.png')}}">
+                        <img src="{{url_for('static', filename='images/BlitzCrank.png')}}" class="greens">
+                        <img src="{{url_for('static', filename='images/Lulu.png')}}" class="greens">
+                        <img src="{{url_for('static', filename='images/Tristana.png')}}">
+                        <img src="{{url_for('static', filename='images/Heimerdinger.png')}}" class="">
+                        <img src="{{url_for('static', filename='images/Vex.png')}}" class="">
+                        <img src="{{url_for('static', filename='images/Janna.png')}}" class="">
                     </span>
                     <!-- Extra comp information-->
                 </div>
