@@ -8,82 +8,82 @@ def compDecide(userComp):
     # Comps in our database
     allComps = {}
 
-    yordle = {}
-    yordle['Blitzcrank'] = 9
-    yordle['Heimerdinger'] = 9
-    yordle['Janna'] = 9
-    yordle['Lulu'] = 9
-    yordle['Poppy'] = 9
-    yordle['Tristana'] = 9
-    yordle['Vex'] = 9
-    yordle['Ziggs'] = 9
-    allComps['Yordle'] = yordle
+    yordles = {}
+    yordles['Blitzcrank'] = 9
+    yordles['Heimerdinger'] = 9
+    yordles['Janna'] = 9
+    yordles['Lulu'] = 9
+    yordles['Poppy'] = 9
+    yordles['Tristana'] = 9
+    yordles['Vex'] = 9
+    yordles['Ziggs'] = 9
+    allComps['Yordles'] = yordles
 
-    innovatorEnchanterSocialite = {}
-    innovatorEnchanterSocialite['Ezreal'] = 9
-    innovatorEnchanterSocialite['Heimerdinger'] = 9
-    innovatorEnchanterSocialite['Janna'] = 9
-    innovatorEnchanterSocialite['Jayce'] = 9
-    innovatorEnchanterSocialite['Orianna'] = 9
-    innovatorEnchanterSocialite['Seraphine'] = 9
-    innovatorEnchanterSocialite['Taric'] = 9
-    innovatorEnchanterSocialite['Zilean'] = 9
-    allComps['Innovator Enchanter Socialite'] = innovatorEnchanterSocialite
+    innovatorEnchanterSocialites = {}
+    innovatorEnchanterSocialites['Ezreal'] = 9
+    innovatorEnchanterSocialites['Heimerdinger'] = 9
+    innovatorEnchanterSocialites['Janna'] = 9
+    innovatorEnchanterSocialites['Jayce'] = 9
+    innovatorEnchanterSocialites['Orianna'] = 9
+    innovatorEnchanterSocialites['Seraphine'] = 9
+    innovatorEnchanterSocialites['Taric'] = 9
+    innovatorEnchanterSocialites['Zilean'] = 9
+    allComps['Innovator Enchanter Socialites'] = innovatorEnchanterSocialites
 
-    syndicateAssassin = {}
-    syndicateAssassin['Akali'] = 9
-    syndicateAssassin['Braum'] = 9
-    syndicateAssassin['Darius'] = 9
-    syndicateAssassin['Ekko'] = 9
-    syndicateAssassin['Janna'] = 9
-    syndicateAssassin['Shaco'] = 9
-    syndicateAssassin['Talon'] = 9
-    syndicateAssassin['Zyra'] = 9
-    allComps['Syndicate Assassin'] = syndicateAssassin
+    syndicateAssassins = {}
+    syndicateAssassins['Akali'] = 9
+    syndicateAssassins['Braum'] = 9
+    syndicateAssassins['Darius'] = 9
+    syndicateAssassins['Ekko'] = 9
+    syndicateAssassins['Janna'] = 9
+    syndicateAssassins['Shaco'] = 9
+    syndicateAssassins['Talon'] = 9
+    syndicateAssassins['Zyra'] = 9
+    allComps['Syndicate Assassins'] = syndicateAssassins
 
-    arcanist = {}
-    arcanist['Janna'] = 9
-    arcanist['Lux'] = 9
-    arcanist['Malzahar'] = 9
-    arcanist['Swain'] = 9
-    arcanist['TwistedFate'] = 9
-    arcanist['Vex'] = 9
-    arcanist['Yuumi'] = 9
-    arcanist['Ziggs'] = 9
-    allComps['Arcanist'] = arcanist
+    arcanists = {}
+    arcanists['Janna'] = 9
+    arcanists['Lux'] = 9
+    arcanists['Malzahar'] = 9
+    arcanists['Swain'] = 9
+    arcanists['TwistedFate'] = 9
+    arcanists['Vex'] = 9
+    arcanists['Yuumi'] = 9
+    arcanists['Ziggs'] = 9
+    allComps['Arcanists'] = arcanists
 
-    chemtech = {}
-    chemtech['DrMundo'] = 9
-    chemtech['Kaisa'] = 9
-    chemtech['Lissandra'] = 9
-    chemtech['Singed'] = 9
-    chemtech['Twitch'] = 9
-    chemtech['Urgot'] = 9
-    chemtech['Warwick'] = 9
-    chemtech['Zac'] = 9
-    allComps['Chemtech'] = chemtech
+    chemtechs = {}
+    chemtechs['DrMundo'] = 9
+    chemtechs['Kaisa'] = 9
+    chemtechs['Lissandra'] = 9
+    chemtechs['Singed'] = 9
+    chemtechs['Twitch'] = 9
+    chemtechs['Urgot'] = 9
+    chemtechs['Warwick'] = 9
+    chemtechs['Zac'] = 9
+    allComps['Chemtechs'] = chemtechs
 
-    protector = {}
-    protector['Blitzcrank'] = 9
-    protector['Caitlyn'] = 9
-    protector['Garen'] = 9
-    protector['Graves'] = 9
-    protector['Jayce'] = 9
-    protector['Kassadin'] = 9
-    protector['Kogmaw'] = 9
-    protector['Malzahar'] = 9
-    allComps['Protector'] = protector
+    protectors = {}
+    protectors['Blitzcrank'] = 9
+    protectors['Caitlyn'] = 9
+    protectors['Garen'] = 9
+    protectors['Graves'] = 9
+    protectors['Jayce'] = 9
+    protectors['Kassadin'] = 9
+    protectors['Kogmaw'] = 9
+    protectors['Malzahar'] = 9
+    allComps['Protectors'] = protectors
 
-    challenger = {}
-    challenger['Braum'] = 9
-    challenger['Camille'] = 9
-    challenger['Fiora'] = 9
-    challenger['Kaisa'] = 9
-    challenger['Leona'] = 9
-    challenger['Quinn'] = 9
-    challenger['Samira'] = 9
-    challenger['Yone'] = 9
-    allComps['Challenger'] = challenger
+    challengers = {}
+    challengers['Braum'] = 9
+    challengers['Camille'] = 9
+    challengers['Fiora'] = 9
+    challengers['Kaisa'] = 9
+    challengers['Leona'] = 9
+    challengers['Quinn'] = 9
+    challengers['Samira'] = 9
+    challengers['Yone'] = 9
+    allComps['Challengers'] = challengers
 
     mutantColossus = {}
     mutantColossus['Chogath'] = 9
@@ -94,29 +94,30 @@ def compDecide(userComp):
     mutantColossus['Sion'] = 9
     allComps['Mutant Colossus'] = mutantColossus
 
-    imperial = {}
-    imperial['Camille'] = 9
-    imperial['Ekko'] = 9
-    imperial['Janna'] = 9
-    imperial['Orianna'] = 9
-    imperial['Samira'] = 9
-    imperial['Swain'] = 9
-    imperial['Talon'] = 9
-    imperial['Yuumi'] = 9
-    allComps['Imperial'] = imperial
+    imperials = {}
+    imperials['Camille'] = 9
+    imperials['Ekko'] = 9
+    imperials['Janna'] = 9
+    imperials['Orianna'] = 9
+    imperials['Samira'] = 9
+    imperials['Swain'] = 9
+    imperials['Talon'] = 9
+    imperials['Yuumi'] = 9
+    allComps['Imperials'] = imperials
 
-    scrapSister = {}
-    scrapSister['Blitzcrank'] = 9
-    scrapSister['Ekko'] = 9
-    scrapSister['Ezreal'] = 9
-    scrapSister['Janna'] = 9
-    scrapSister['Jinx'] = 9
-    scrapSister['Leona'] = 9
-    scrapSister['Trundle'] = 9
-    scrapSister['Vi'] = 9
-    allComps['Scrap Sister'] = scrapSister
+    scrapSisters = {}
+    scrapSisters['Blitzcrank'] = 9
+    scrapSisters['Ekko'] = 9
+    scrapSisters['Ezreal'] = 9
+    scrapSisters['Janna'] = 9
+    scrapSisters['Jinx'] = 9
+    scrapSisters['Leona'] = 9
+    scrapSisters['Trundle'] = 9
+    scrapSisters['Vi'] = 9
+    allComps['Scrap Sisters'] = scrapSisters
 
     # Deciding comp
+    comp_list = []
     decidedComp = 'none'
     decidedCompPoints = 0
     currPoints = 0
@@ -129,4 +130,50 @@ def compDecide(userComp):
         if currPoints > decidedCompPoints:
             decidedComp = comp
             decidedCompPoints = currPoints
-    print(decidedComp)
+    comp_list.append(decidedComp)
+    for comp in allComps:
+        currPoints = 0
+        for champ in allComps[comp]:
+            if champ in userComp:
+                currPoints += userComp[champ]
+        if currPoints == decidedCompPoints and comp != decidedComp:
+            comp_list.append(comp)
+
+    for comp in comp_list:
+        print(comp)
+    
+
+#the bot determines highest power spike with the comp : rolling or levelling 
+def power_spike_decide(compChosen, userLevel):
+    if userLevel == 9:
+        print("Roll Down")
+    else:
+        if compChosen == 'Yordles':
+            print("Slow Roll")
+
+        if compChosen == 'Innovator Enchanter Socialites':
+            print("Level up to 9")
+
+        if compChosen == 'Syndicate Assassins':
+            print("Standard")
+
+        if compChosen == 'Arcanists':
+            print("Standard")
+
+        if compChosen == 'Chemtechs':
+            print("Level up to 9")
+
+        if compChosen == 'Protectors':
+            print("Level up to 9")
+
+        if compChosen == 'Challengers':
+            print("Standard")
+
+        if compChosen == 'Mutant Colossus':
+            print("Slow Roll")
+
+        if compChosen == 'Imperials':
+            print("Slow Roll")  
+        
+        if compChosen == 'Scrap Sisters':
+            print("Level up to 9")
