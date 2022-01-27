@@ -81,10 +81,147 @@ nav{
     left: 50px;
 }
 
-/* .greens {
+.cost1 {
+    border: 2px solid black;
+}
+
+.cost2 {
     border: 2px solid green;
-} */
+}
+
+.cost3 {
+    border: 2px solid blue;
+}
+
+.cost4 {
+    border: 2px solid purple;
+}
+
+.cost5 {
+    border: 2px solid gold;
+}
 
 .tform {
     color: #fff;
 }
+
+.formImages {
+    position: relative;
+    transition: 0.2s
+}
+
+.formImages:hover {
+    transform:scale(1.08);
+    z-index: 1;
+}
+
+.container{
+    width: 90%;
+    padding: 20px;
+    padding-bottom: 10px;
+    margin: 40px auto;
+    margin-top: 10px;
+    background-color: #484848;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* not deleting */
+
+.random {
+    display: block;
+}
+
+.champNum {
+    position: absolute;
+    top: 0px; 
+    left: 75%;
+    border: none;
+    background: none;
+    color: red;
+    font-size: 300%;
+    width: 17%;
+}
+
+.imageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.imageOverlay:hover{
+    opacity: 1;
+}
+
+/* Home page champion counter */
+.btn1 {
+    background-color: white;
+    /* border: none; */
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px;
+    margin-top: 12px;
+    transition: 0.4s ease;
+}
+
+.btn1 div {
+    position: relative;
+    height: 15px;
+    width: 15px;
+    border-top: 4.5px solid black;
+    border-left: 4.5px solid black;
+}
+
+.up div {
+    position: relative;
+    transform: rotate(45deg);
+    left: 8.5px;
+    top: 0px;
+}
+
+.down div {
+    position: relative;
+    transform: rotate(-135deg);
+    left: 8.5px;
+    top: 1px;
+}
+
+.champName {
+    position: relative;
+    text-align: center; 
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* To delete later*/
+/* .box{
+    width: 250px;
+    height: 300px;
+    background: orange;
+    margin: 0px 10px;
+    transition: 0.1s;
+}
+
+.box:hover{
+    transform: scale(1.3);
+    background: #ff800a;
+    z-index: 2;
+    box-shadow: 2px 2px 2px #000;
+    
+} */

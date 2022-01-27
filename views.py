@@ -6,6 +6,7 @@ views = Blueprint(__name__, "views")
 @views.route("/", methods = ['POST', 'GET'])
 def home():
     if request.method == 'POST':
+        # print(request.form["0"])
         # Make dictionary for number of each champion the user has
         userComp = {}
         userComp['Akali'] = request.form["0"]

@@ -1,8 +1,10 @@
 
 # Function which decides the best comp(s) the user should go for.
 def compDecide(userComp):
-    # Convert strings to integers in userComp dictionary
+    # Convert strings to integers and empty strings to 0 in userComp dictionary
     for champion in userComp:
+        if userComp[champion] == "":
+            userComp[champion] = "0"
         userComp[champion] = int(userComp[champion])
     
     # Comps in our database

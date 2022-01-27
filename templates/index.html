@@ -11,6 +11,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <style>
+            input[type=number]::-webkit-inner-spin-button,
+            input[type=number]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        </style>
 
 
     </head>
@@ -27,250 +34,753 @@
                 </div>
             </nav>
             <main>
-                <!-- Work in progress form-->
-                <div class="Form using Images">
-                    <span class= "formImages">
-                        <img style = "border:2px groove gold";
-                        img src="{{url_for('static', filename='images/Akali.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove green";
-                            img src="{{url_for('static', filename='images/Blitzcrank.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove purple";
-                            img src="{{url_for('static', filename='images/Braum.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove black";
-                            img src="{{url_for('static', filename='images/Caitlyn.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove black";
-                            img src="{{url_for('static', filename='images/Camille.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove blue";
-                            img src="{{url_for('static', filename='images/Chogath.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove black";
-                            img src="{{url_for('static', filename='images/Darius.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove purple";
-                            img src="{{url_for('static', filename='images/DrMundo.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove blue";
-                            img src="{{url_for('static', filename='images/Ekko.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove black";
-                            img src="{{url_for('static', filename='images/Ezreal.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove purple";
-                            img src="{{url_for('static', filename='images/Fiora.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove gold";
-                            img src="{{url_for('static', filename='images/Galio.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove blue";
-                            img src="{{url_for('static', filename='images/Gangplank.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove black";
-                            img src="{{url_for('static', filename='images/Garen.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove black";
-                            img src="{{url_for('static', filename='images/Graves.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove blue";
-                            img src="{{url_for('static', filename='images/Heimerdinger.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove black";
-                            img src="{{url_for('static', filename='images/Illaoi.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove purple";
-                            img src="{{url_for('static', filename='images/Janna.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove gold";
-                            img src="{{url_for('static', filename='images/Jayce.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove purple";
-                            img src="{{url_for('static', filename='images/Jhin.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove gold";
-                            img src="{{url_for('static', filename='images/Jinx.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove gold";
-                            img src="{{url_for('static', filename='images/Kaisa.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove black";
-                            img src="{{url_for('static', filename='images/Kassadin.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove green";
-                            img src="{{url_for('static', filename='images/Katarina.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove green";
-                            img src="{{url_for('static', filename='images/Kogmaw.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove blue";
-                            img src="{{url_for('static', filename='images/Leona.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove blue";
-                            img src="{{url_for('static', filename='images/Lissandra.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove green";
-                            img src="{{url_for('static', filename='images/Lulu.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove purple";
-                            img src="{{url_for('static', filename='images/Lux.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove blue";
-                            img src="{{url_for('static', filename='images/Malzahar.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove blue";
-                            img src="{{url_for('static', filename='images/MissFortune.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove purple";
-                            img src="{{url_for('static', filename='images/Orianna.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove black";
-                            img src="{{url_for('static', filename='images/Poppy.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove green";
-                            img src="{{url_for('static', filename='images/Quinn.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove blue";
-                            img src="{{url_for('static', filename='images/Samira.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove purple";
-                            img src="{{url_for('static', filename='images/Seraphine.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove blue";
-                            img src="{{url_for('static', filename='images/Shaco.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove black";
-                            img src="{{url_for('static', filename='images/Singed.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove purple";
-                            img src="{{url_for('static', filename='images/Sion.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove green";
-                            img src="{{url_for('static', filename='images/Swain.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove gold";
-                            img src="{{url_for('static', filename='images/TahmKench.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove green";
-                            img src="{{url_for('static', filename='images/Talon.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove blue";
-                            img src="{{url_for('static', filename='images/Taric.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove green";
-                            img src="{{url_for('static', filename='images/Tristana.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove green";
-                            img src="{{url_for('static', filename='images/Trundle.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove black";
-                            img src="{{url_for('static', filename='images/TwistedFate.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove black";
-                            img src="{{url_for('static', filename='images/Twitch.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove purple";
-                            img src="{{url_for('static', filename='images/Urgot.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove gold";
-                            img src="{{url_for('static', filename='images/Veigar.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove blue";
-                            img src="{{url_for('static', filename='images/Vex.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove green";
-                            img src="{{url_for('static', filename='images/Vi.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove gold";
-                            img src="{{url_for('static', filename='images/Viktor.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove green";
-                            img src="{{url_for('static', filename='images/Warwick.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove purple";
-                            img src="{{url_for('static', filename='images/Yone.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove gold";
-                            img src="{{url_for('static', filename='images/Yuumi.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove blue";
-                            img src="{{url_for('static', filename='images/Zac.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove black";
-                            img src="{{url_for('static', filename='images/Ziggs.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove green";
-                            img src="{{url_for('static', filename='images/Zilean.png')}}">
-                    </span>
-                    <span class= "formImages">
-                        <img style = "border:2px groove green";
-                            img src="{{url_for('static', filename='images/Zyra.png')}}">
-                    </span>
-                </div>
+                <!-- Javascript code -->
+                <script>
+                    function increment(value) {
+                        // window.alert(document.getElementById(value).value);
+                        if (document.getElementById(value).value == "") {
+                            document.getElementById(value).value = 1;
+                        }
+                        else if (document.getElementById(value).value < 9) {
+                            document.getElementById(value).value++;
+                        }
+                    }
+                    function decrement (value) {
+                        if (document.getElementById(value).value == 1) {
+                            document.getElementById(value).value = "";
+                        }
+                        else if (document.getElementById(value).value != "") {
+                            document.getElementById(value).value--;
+                        }
+                    }
+                                   
+                </script>
 
-                <!-- Temporary form -->
+                <!-- Work in progress form-->
                 <form class="tform" action="#" method="post">
+                    <input type="submit" value="solve"/>
+                    <!-- ONE COST -->
+                    <h2 style="text-align: center;"> 1 cost </h2>
+                    <div class="container">
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Caitlyn.png')}}" class="cost1 random">
+                            <!-- How many clones of this champion the user owns. -->
+                                <input class="champNum" type="number" id="0" name="0"/>
+                            <!-- Stuff that pops up on hover-->
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('0')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('0')"><div></div></button>
+                                </div>
+                            </div>
+                            <!-- Name of champion-->
+                            <p class="champName">Caitlyn</p>
+                        </span>
+
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Camille.png')}}" class="cost1">
+                            <input class="champNum" type="number" id="1" name="1"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('1')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('1')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Camille</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Darius.png')}}" class="cost1">
+                            <input class="champNum" type="number" id="2" name="2"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('2')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('2')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Darius</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Ezreal.png')}}" class="cost1">
+                            <input class="champNum" type="number" id="3" name="3"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('3')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('3')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Ezreal</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Garen.png')}}" class="cost1">
+                            <input class="champNum" type="number" id="4" name="4"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('4')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('4')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Garen</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Graves.png')}}" class="cost1">
+                            <input class="champNum" type="number" id="5" name="5"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('5')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('5')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Graves</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Illaoi.png')}}" class="cost1">
+                            <input class="champNum" type="number" id="6" name="6"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('6')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('6')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Illaoi</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Kassadin.png')}}" class="cost1">
+                            <input class="champNum" type="number" id="7" name="7"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('7')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('7')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Kassadin</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Poppy.png')}}" class="cost1">
+                            <input class="champNum" type="number" id="8" name="8"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('8')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('8')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Poppy</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Singed.png')}}" class="cost1">
+                            <input class="champNum" type="number" id="9" name="9"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('9')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('9')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Singed</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/TwistedFate.png')}}" class="cost1">
+                            <input class="champNum" type="number" id="10" name="10"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('10')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('10')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Twisted Fate</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Twitch.png')}}" class="cost1">
+                            <input class="champNum" type="number" id="11" name="11"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('11')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('11')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Twitch</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Ziggs.png')}}" class="cost1">
+                            <input class="champNum" type="number" id="12" name="12"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('12')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('12')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Ziggs</p>
+                        </span>
+                    </div>
+
+                    <!-- TWO COST -->
+
+                    <h2 style="text-align: center;"> 2 cost </h2>
+                    <div class="container" > 
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Blitzcrank.png')}}" class="cost2">
+                            <input class="champNum" type="number" id="13" name="13"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('13')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('13')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Blitzcrank</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Katarina.png')}}" class="cost2">
+                            <input class="champNum" type="number" id="14" name="14"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('14')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('14')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Katarina</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Kogmaw.png')}}" class="cost2">
+                            <input class="champNum" type="number" id="15" name="15"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('15')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('15')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Kogmaw</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Lulu.png')}}" class="cost2">
+                            <input class="champNum" type="number" id="16" name="16"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('16')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('16')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Lulu</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Quinn.png')}}" class="cost2">
+                            <input class="champNum" type="number" id="17" name="17"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('17')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('17')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Quinn</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Swain.png')}}" class="cost2">
+                            <input class="champNum" type="number" id="18" name="18"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('18')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('18')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Swain</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Talon.png')}}" class="cost2">
+                            <input class="champNum" type="number" id="19" name="19"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('19')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('19')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Talon</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Tristana.png')}}" class="cost2">
+                            <input class="champNum" type="number" id="20" name="20"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('20')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('20')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Tristana</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Trundle.png')}}" class="cost2">
+                            <input class="champNum" type="number" id="21" name="21"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('21')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('21')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Trundle</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Vi.png')}}" class="cost2">
+                            <input class="champNum" type="number" id="22" name="22"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('22')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('22')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Vi</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Warwick.png')}}" class="cost2">
+                            <input class="champNum" type="number" id="23" name="23"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('23')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('23')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Warwick</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Zilean.png')}}" class="cost2">
+                            <input class="champNum" type="number" id="24" name="24"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('24')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('24')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Zilean</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Zyra.png')}}" class="cost2">
+                            <input class="champNum" type="number" id="25" name="25"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('25')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('25')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Zyra</p>
+                        </span>
+                    </div>
+
+                    <!-- THREE COST -->
+
+                    <h2 style="text-align: center;"> 3 cost </h2>
+                    <div class="container" > 
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Chogath.png')}}" class="cost3">
+                            <input class="champNum" type="number" id="26" name="26"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('26')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('26')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Chogath</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Ekko.png')}}" class="cost3">
+                            <input class="champNum" type="number" id="27" name="27"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('27')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('27')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Ekko</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Gangplank.png')}}" class="cost3">
+                            <input class="champNum" type="number" id="28" name="28"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('28')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('28')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Gangplank</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Heimerdinger.png')}}" class="cost3">
+                            <input class="champNum" type="number" id="29" name="29"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('29')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('29')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Heimerdinger</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Leona.png')}}" class="cost3">
+                            <input class="champNum" type="number" id="30" name="30"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('30')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('30')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Leona</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Lissandra.png')}}" class="cost3">
+                            <input class="champNum" type="number" id="31" name="31"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('31')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('31')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Lissandra</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Malzahar.png')}}" class="cost3">
+                            <input class="champNum" type="number" id="32" name="32"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('32')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('32')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Malzahar</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/MissFortune.png')}}" class="cost3">
+                            <input class="champNum" type="number" id="33" name="33"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('33')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('33')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">MissFortune</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Samira.png')}}" class="cost3">
+                            <input class="champNum" type="number" id="34" name="34"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('34')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('34')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Samira</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Shaco.png')}}" class="cost3">
+                            <input class="champNum" type="number" id="35" name="35"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('35')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('35')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Shaco</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Taric.png')}}" class="cost3">
+                            <input class="champNum" type="number" id="36" name="36"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('36')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('36')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Taric</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Vex.png')}}" class="cost3">
+                            <input class="champNum" type="number" id="37" name="37"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('37')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('37')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Vex</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Zac.png')}}" class="cost3">
+                            <input class="champNum" type="number" id="38" name="38"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('38')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('38')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Zac</p>
+                        </span>
+                    </div>
+
+                    <!--  4 COST -->
+
+                    <h2 style="text-align: center;"> 4 cost </h2>
+                    <div class="container" > 
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Braum.png')}}" class="cost4">
+                            <input class="champNum" type="number" id="39" name="39"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('39')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('39')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Braum</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/DrMundo.png')}}" class="cost4">
+                            <input class="champNum" type="number" id="40" name="40"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('40')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('40')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Dr Mundo</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Fiora.png')}}" class="cost4">
+                            <input class="champNum" type="number" id="41" name="41"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('41')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('41')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Fiora</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Janna.png')}}" class="cost4">
+                            <input class="champNum" type="number" id="42" name="42"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('42')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('42')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Janna</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Jhin.png')}}" class="cost4">
+                            <input class="champNum" type="number" id="43" name="43"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('43')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('43')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Jhin</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Lux.png')}}" class="cost4">
+                            <input class="champNum" type="number" id="44" name="44"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('44')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('44')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Lux</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Orianna.png')}}" class="cost4">
+                            <input class="champNum" type="number" id="45" name="45"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('45')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('45')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Orianna</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Seraphine.png')}}" class="cost4">
+                            <input class="champNum" type="number" id="46" name="46"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('46')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('46')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Seraphine</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Sion.png')}}" class="cost4">
+                            <input class="champNum" type="number" id="47" name="47"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('47')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('47')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Sion</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Urgot.png')}}" class="cost4">
+                            <input class="champNum" type="number" id="48" name="48"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('48')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('48')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Urgot</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Yone.png')}}" class="cost4">
+                            <input class="champNum" type="number" id="49" name="49"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('49')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('49')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Yone</p>
+                        </span>
+                    </div>
+
+                    <!--  FIVE COST -->
+
+                    <h2 style="text-align: center;"> 5 cost </h2>
+                    <div class="container" > 
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Akali.png')}}" class="cost5">
+                            <input class="champNum" type="number" id="50" name="50"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('50')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('50')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Akali</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Galio.png')}}" class="cost5">
+                            <input class="champNum" type="number" id="51" name="51"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('51')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('51')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Galio</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Jayce.png')}}" class="cost5">
+                            <input class="champNum" type="number" id="52" name="52"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('52')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('52')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Jayce</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Jinx.png')}}" class="cost5">
+                            <input class="champNum" type="number" id="53" name="53"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('53')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('53')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Jinx</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Kaisa.png')}}" class="cost5">
+                            <input class="champNum" type="number" id="54" name="54"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('54')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('54')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Kaisa</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/TahmKench.png')}}" class="cost5">
+                            <input class="champNum" type="number" id="55" name="55"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('55')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('55')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Tahm Kench</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Veigar.png')}}" class="cost5">
+                            <input class="champNum" type="number" id="56" name="56"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('56')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('56')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Veigar</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Viktor.png')}}" class="cost5">
+                            <input class="champNum" type="number" id="57" name="57"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('57')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('57')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Viktor</p>
+                        </span>
+                        <span class= "formImages">
+                            <img src="{{url_for('static', filename='images/Yuumi.png')}}" class="cost5">
+                            <input class="champNum" type="number" id="58" name="58"/>
+                            <div class="imageOverlay">
+                                <div class="arrowContainer">
+                                    <div><button type="button" class="btn1 up" onclick="increment('58')"><div></div></button></div>
+                                    <button type="button" class="btn1 down" onclick="decrement('58')"><div></div></button>
+                                </div>
+                            </div>
+                            <p class="champName">Yuumi</p>
+                        </span>
+                        
+                    </div>
+
+
+
+
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+                
+            
+                <br>
+
+                
+
+            </main>
+
+            <footer>
+
+            </footer>
+        </section>
+    </body>
+</html>
+
+<!-- Temporary form -->
+                <!-- <form class="tform" action="#" method="post"> -->
                     <!-- <input type="number" name="rq" value="0"/> -->
-                    <input type="submit" value="solve"/> <br>
+                    <!-- <input type="submit" value="solve"/> <br>
                     Akali <input type="number" name="0" value="0"/> <br>
                     Blitzcrank <input type="number" name="1" value="0"/> <br>
                     Braum<input type="number" name="2" value="0"/> <br>
@@ -329,18 +839,295 @@
                     Zac<input type="number" name="55" value="0"/> <br>
                     Ziggs<input type="number" name="56" value="0"/> <br>
                     Zilean<input type="number" name="57" value="0"/> <br>
-                    Zyra<input type="number" name="58" value="0"/>
+                    Zyra<input type="number" name="58" value="0"/> -->
                     
                     
-                </form>
+                <!-- </form> -->
 
-            </main>
+<!-- 
+    <span style="color:2px groove red;">
+                                    <div>
+                                        <button><img src="/static/images/upArrow.png" class="arrow"></button>
+                                    </div> <br>
+                                    <div>
+                                        <img src="/static/images/downArrow.png" class="arrow">
+                                    </div>
+                                </span>
+ -->
 
-            <footer>
-
-            </footer>
-        </section>
-    </body>
-</html>
-
-
+ <!-- <div>
+    <span class= "formImages">
+        <img style = "border:2px groove green";
+        img src="{{url_for('static', filename='images/Blitzcrank.png')}}">
+    </span>
+    <span class= "formImages">
+        <img style = "border:2px groove green";
+        img src="{{url_for('static', filename='images/Katarina.png')}}">
+    </span>
+</div>
+<div>
+    <span class= "formImages">
+        <img style = "border:2px groove blue";
+        img src="{{url_for('static', filename='images/Chogath.png')}}">
+    </span>
+    <span class= "formImages">
+        <img style = "border:2px groove blue";
+        img src="{{url_for('static', filename='images/Ekko.png')}}">
+    </span>
+</div>
+<div>
+    <span class= "formImages">
+        <img style = "border:2px groove purple";
+        img src="{{url_for('static', filename='images/Braum.png')}}">
+    </span>
+    <span class= "formImages">
+        <img style = "border:2px groove purple";
+        img src="{{url_for('static', filename='images/DrMundo.png')}}">
+    </span>
+</div>
+<div>
+    <span class= "formImages">
+        <img style = "border:2px groove gold";
+        img src="{{url_for('static', filename='images/Akali.png')}}">
+    </span>
+    <span class= "formImages">
+        <img style = "border:2px groove gold";
+        img src="{{url_for('static', filename='images/Galio.png')}}">
+    </span>
+</div>
+<span class= "formImages">
+    <img style = "border:2px groove gold";
+    img src="{{url_for('static', filename='images/Akali.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove green";
+        img src="{{url_for('static', filename='images/Blitzcrank.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove purple";
+        img src="{{url_for('static', filename='images/Braum.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove black";
+        img src="{{url_for('static', filename='images/Caitlyn.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove black";
+        img src="{{url_for('static', filename='images/Camille.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove blue";
+        img src="{{url_for('static', filename='images/Chogath.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove black";
+        img src="{{url_for('static', filename='images/Darius.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove purple";
+        img src="{{url_for('static', filename='images/DrMundo.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove blue";
+        img src="{{url_for('static', filename='images/Ekko.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove black";
+        img src="{{url_for('static', filename='images/Ezreal.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove purple";
+        img src="{{url_for('static', filename='images/Fiora.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove gold";
+        img src="{{url_for('static', filename='images/Galio.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove blue";
+        img src="{{url_for('static', filename='images/Gangplank.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove black";
+        img src="{{url_for('static', filename='images/Garen.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove black";
+        img src="{{url_for('static', filename='images/Graves.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove blue";
+        img src="{{url_for('static', filename='images/Heimerdinger.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove black";
+        img src="{{url_for('static', filename='images/Illaoi.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove purple";
+        img src="{{url_for('static', filename='images/Janna.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove gold";
+        img src="{{url_for('static', filename='images/Jayce.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove purple";
+        img src="{{url_for('static', filename='images/Jhin.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove gold";
+        img src="{{url_for('static', filename='images/Jinx.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove gold";
+        img src="{{url_for('static', filename='images/Kaisa.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove black";
+        img src="{{url_for('static', filename='images/Kassadin.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove green";
+        img src="{{url_for('static', filename='images/Katarina.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove green";
+        img src="{{url_for('static', filename='images/Kogmaw.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove blue";
+        img src="{{url_for('static', filename='images/Leona.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove blue";
+        img src="{{url_for('static', filename='images/Lissandra.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove green";
+        img src="{{url_for('static', filename='images/Lulu.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove purple";
+        img src="{{url_for('static', filename='images/Lux.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove blue";
+        img src="{{url_for('static', filename='images/Malzahar.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove blue";
+        img src="{{url_for('static', filename='images/MissFortune.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove purple";
+        img src="{{url_for('static', filename='images/Orianna.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove black";
+        img src="{{url_for('static', filename='images/Poppy.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove green";
+        img src="{{url_for('static', filename='images/Quinn.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove blue";
+        img src="{{url_for('static', filename='images/Samira.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove purple";
+        img src="{{url_for('static', filename='images/Seraphine.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove blue";
+        img src="{{url_for('static', filename='images/Shaco.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove black";
+        img src="{{url_for('static', filename='images/Singed.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove purple";
+        img src="{{url_for('static', filename='images/Sion.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove green";
+        img src="{{url_for('static', filename='images/Swain.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove gold";
+        img src="{{url_for('static', filename='images/TahmKench.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove green";
+        img src="{{url_for('static', filename='images/Talon.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove blue";
+        img src="{{url_for('static', filename='images/Taric.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove green";
+        img src="{{url_for('static', filename='images/Tristana.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove green";
+        img src="{{url_for('static', filename='images/Trundle.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove black";
+        img src="{{url_for('static', filename='images/TwistedFate.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove black";
+        img src="{{url_for('static', filename='images/Twitch.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove purple";
+        img src="{{url_for('static', filename='images/Urgot.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove gold";
+        img src="{{url_for('static', filename='images/Veigar.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove blue";
+        img src="{{url_for('static', filename='images/Vex.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove green";
+        img src="{{url_for('static', filename='images/Vi.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove gold";
+        img src="{{url_for('static', filename='images/Viktor.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove green";
+        img src="{{url_for('static', filename='images/Warwick.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove purple";
+        img src="{{url_for('static', filename='images/Yone.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove gold";
+        img src="{{url_for('static', filename='images/Yuumi.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove blue";
+        img src="{{url_for('static', filename='images/Zac.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove black";
+        img src="{{url_for('static', filename='images/Ziggs.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove green";
+        img src="{{url_for('static', filename='images/Zilean.png')}}">
+</span>
+<span class= "formImages">
+    <img style = "border:2px groove green";
+        img src="{{url_for('static', filename='images/Zyra.png')}}">
+</span> -->
